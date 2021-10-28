@@ -539,20 +539,20 @@ textarea {
 	<tr>
 		<td>
 		
-<div class="slidecontainer">
-	<div class="w3-container w3-cell">
-		<canvas id="bioM" width="450" height="120" class="w3-animate-zoom"></canvas>
-	</div>
-</div>
+			<div class="slidecontainer">
+				<div class="w3-container w3-cell">
+					<canvas id="bioM" width="450" height="120" class="w3-animate-zoom"></canvas>
+				</div>
+			</div>
 
 		</td>
 		<td>
 		
-<div class="slidecontainer">
-	<div class="w3-container w3-cell">
-		<canvas id="bioB" width="450" height="120" class="w3-animate-zoom"></canvas>
-	</div>
-</div>
+			<div class="slidecontainer">
+				<div class="w3-container w3-cell">
+					<canvas id="bioB" width="450" height="120" class="w3-animate-zoom"></canvas>
+				</div>
+			</div>
 		
 		</td>
 	</tr>
@@ -622,10 +622,10 @@ var imgData;
 	}
 
  
-	  var canvas = document.getElementById('bio');
-      var context = canvas.getContext('2d');
+	var canvas = document.getElementById('bio');
+      	var context = canvas.getContext('2d');
 
-      canvas.addEventListener('mousemove', function(evt) {
+      	canvas.addEventListener('mousemove', function(evt) {
         var mousePos = getMousePos(canvas, evt);
         var message = mousePos.x + '|' + mousePos.y;
         MOUSE_MOVE(canvas, message);
@@ -678,6 +678,7 @@ var li = 2;	 // axis line
 var bo = 20; // bottom font size
 var lo = 540;// letter size
 var tmp = '';//stores the signal for use
+	
 //MOTIF SET
 var c = "GAAGTGAGT,TTCGTAAGT,AAGGTACTT,CTGGTGAGC,AGAGTGAGT," +
         "CAGGTAGAG,ACTGTACGT,CTGGTGAGT,TATGTAAGT,CGGGTGAGC";
@@ -987,7 +988,7 @@ function logo(M, max, bioL) {
 	var a = [];
 	var t = M[0].length;
 
-    var canvas = document.getElementById(bioL);
+    	var canvas = document.getElementById(bioL);
 	var canvasl = document.getElementById('letter');
 	var ctl = canvasl.getContext('2d');
 	
