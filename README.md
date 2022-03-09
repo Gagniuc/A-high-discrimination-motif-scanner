@@ -1,5 +1,6 @@
 # A high discrimination motif scanner (two PFMs)
-A high discrimination motif scanner (two PFMs)
+
+This is a scanner designed to recognise DNA motifs within a long stretch of DNA. The scanner uses a motif set to compute a position weight matrix (PWM). It uses the PWM to search for regions that resemble the motifs from the set. But how it does that? Consecutive score values extracted from sliding windows determine the formation of a representative signal above a long stretch of DNA. The score peaks from the signal determine the location of possible motif variations that resemble those in the motif set.
 
 Live demo: https://gagniuc.github.io/A-high-discrimination-motif-scanner/
 
